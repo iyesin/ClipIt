@@ -256,9 +256,9 @@ void read_preferences()
     prefs.offline_mode = g_key_file_get_boolean(rc_key, "rc", "offline_mode", NULL);
 
     /* Check for errors and set default values if any */
-    if ((!prefs.history_limit) || (prefs.history_limit > 1000) || (prefs.history_limit < 0))
+    if ((!prefs.history_limit) || (prefs.history_limit > 1024 * 1024 ) || (prefs.history_limit < 0))
       prefs.history_limit = DEF_HISTORY_LIMIT;
-    if ((!prefs.items_menu) || (prefs.items_menu > 1000) || (prefs.items_menu < 0))
+    if ((!prefs.items_menu) || (prefs.items_menu > 65535 ) || (prefs.items_menu < 0))
       prefs.items_menu = DEF_ITEMS_MENU;
     if ((!prefs.item_length) || (prefs.item_length > 75) || (prefs.item_length < 0))
       prefs.item_length = DEF_ITEM_LENGTH;

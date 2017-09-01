@@ -39,8 +39,8 @@ G_BEGIN_DECLS
 #define DEF_SAVE_URIS         TRUE
 #define DEF_SAVE_HISTORY      TRUE
 #define DEF_USE_RMB_MENU      FALSE
-#define DEF_HISTORY_LIMIT     50
-#define DEF_ITEMS_MENU        20
+#define DEF_HISTORY_LIMIT     1024 * 1024
+#define DEF_ITEMS_MENU        65535
 #define DEF_STATICS_SHOW      TRUE
 #define DEF_STATICS_ITEMS     10
 #define DEF_HYPERLINKS_ONLY   FALSE
@@ -49,10 +49,10 @@ G_BEGIN_DECLS
 #define DEF_REVERSE_HISTORY   FALSE
 #define DEF_ITEM_LENGTH       50
 #define DEF_ELLIPSIZE         2
-#define DEF_HISTORY_KEY       "<Ctrl><Alt>H"
+#define DEF_HISTORY_KEY       "<Super><Shift>Z"
 #define DEF_ACTIONS_KEY       "<Ctrl><Alt>A"
 #define DEF_MENU_KEY          "<Ctrl><Alt>P"
-#define DEF_SEARCH_KEY        "<Ctrl><Alt>F"
+#define DEF_SEARCH_KEY        "<Super><Shift>X"
 #define DEF_OFFLINE_KEY       "<Ctrl><Alt>O"
 #define DEF_NO_ICON           FALSE
 #define DEF_OFFLINE_MODE      FALSE

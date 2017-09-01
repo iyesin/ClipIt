@@ -71,7 +71,7 @@ prefs_t prefs = {DEF_USE_COPY,         DEF_USE_PRIMARY,      DEF_SYNCHRONIZE,
                  DEF_OFFLINE_MODE};
 
 /* Variables for prefix buffer used for matching input to menu items */
-#define MAX_PREFIX_BUF_SIZE 100
+#define MAX_PREFIX_BUF_SIZE 256
 gchar prefix_buffer[MAX_PREFIX_BUF_SIZE];
 int prefix_index;
 
