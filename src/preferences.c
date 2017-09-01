@@ -743,7 +743,7 @@ void show_preferences(gint tab) {
   label = gtk_label_new(_("Items in history:"));
   gtk_misc_set_alignment((GtkMisc*)label, 0.0, 0.50);
   gtk_box_pack_start((GtkBox*)hbox, label, FALSE, FALSE, 0);
-  adjustment = gtk_adjustment_new(25, 5, 1000, 1, 10, 0);
+  adjustment = gtk_adjustment_new(25, 5, DEF_HISTORY_LIMIT, 1, 10, 0);
   history_spin = gtk_spin_button_new((GtkAdjustment*)adjustment, 0.0, 0);
   gtk_spin_button_set_update_policy((GtkSpinButton*)history_spin, GTK_UPDATE_IF_VALID);
   gtk_box_pack_start((GtkBox*)hbox, history_spin, FALSE, FALSE, 0);
@@ -752,7 +752,7 @@ void show_preferences(gint tab) {
   label = gtk_label_new(_("Items in menu:"));
   gtk_misc_set_alignment((GtkMisc*)label, 0.0, 0.50);
   gtk_box_pack_start((GtkBox*)hbox, label, FALSE, FALSE, 0);
-  adjustment_small = gtk_adjustment_new(25, 5, 100, 1, 10, 0);
+  adjustment_small = gtk_adjustment_new(25, 5, DEF_ITEMS_MENU, 1, 10, 0);
   items_menu = gtk_spin_button_new((GtkAdjustment*)adjustment_small, 0.0, 0);
   gtk_spin_button_set_update_policy((GtkSpinButton*)items_menu, GTK_UPDATE_IF_VALID);
   gtk_box_pack_start((GtkBox*)hbox, items_menu, FALSE, FALSE, 0);
@@ -764,7 +764,7 @@ void show_preferences(gint tab) {
   label = gtk_label_new(_("Static items in menu:"));
   gtk_misc_set_alignment((GtkMisc*)label, 0.0, 0.50);
   gtk_box_pack_start((GtkBox*)hbox, label, FALSE, FALSE, 0);
-  adjustment_statics = gtk_adjustment_new(10, 1, 100, 1, 10, 0);
+  adjustment_statics = gtk_adjustment_new(10, 1, DEF_ITEMS_MENU, 1, 10, 0);
   statics_items_spin = gtk_spin_button_new((GtkAdjustment*)adjustment_statics, 0.0, 0);
   gtk_spin_button_set_update_policy((GtkSpinButton*)statics_items_spin, GTK_UPDATE_IF_VALID);
   gtk_box_pack_start((GtkBox*)hbox, statics_items_spin, FALSE, FALSE, 0);
